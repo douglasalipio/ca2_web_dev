@@ -2,14 +2,11 @@
         
     <div class="container full-bg-img">
         
-        <h2 class="display-3 font-bold white-text margin-bottom-2">ROBOTS</h2>
+        <h2 class="display-3 font-bold black-text margin-bottom-2">Tuinzings</h2>
         <hr class="hr-light">
-        <h4 class="white-text my-4">The Rise of the Robots</h4>
+        <h4 class="black-text my-4">Netus et malesuada fames ac. Augue interdum velit euismod</h4>
         
-        <button type="button ml-2" 
-           class="btn btn-outline-white"
-           id="scrollit"
-           >
+        <button type="button ml-2" class="btn btn-info"id="scrollit">
                 Read More
                 <!-- see icons https://mdbootstrap.com/content/icons-list/ -->
                 <i class="fa fa-microchip ml-2"></i>
