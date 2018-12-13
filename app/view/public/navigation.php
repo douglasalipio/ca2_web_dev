@@ -2,10 +2,10 @@
 <!-- this goes in the header section --> 
 
     <!-- MENU -->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-primary fixed-top">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
 
       <a class="navbar-brand" href="index.php">
-        <img src="img/robot.svg" alt="robot logo" style="width:60px;">
+        <img src="img/capoeira_stencil.jpg" alt="robot logo" style="width:60px;">
       </a>
         
       <!-- Toggler/collapsibe Button -->
@@ -21,12 +21,15 @@
           <a class="nav-link <?php echo "$menuActive_index"; ?>" href="index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link <?php echo "$menuActive_about"; ?>" href="about.php">About</a>
+          <a class="nav-link <?php echo "$menuActive_about"; ?>" href="about.php">Database</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link <?php echo "$menuActive_about"; ?>" href="about.php">Report</a>
         </li>
       </ul> 
-        
+      
       <ul class="nav nav-button ml-auto">
-        <li><button class="btn btn-warning" type="button" onclick="location.href='login.php'">Sign In <i class="fa fa-address-book ml-2"></i></button></li>
+        <li><button class="btn btn-danger" type="button" onclick="location.href='login.php'">Sign In</button></li>
       </ul>
           
       </div><!-- END: menu collapse wrapper-->

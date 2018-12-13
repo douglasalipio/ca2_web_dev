@@ -78,42 +78,44 @@ header {
 echo "PHP Check : YEP I'M GOOD";
 
 ?>
+      </div>
+        </div>
+          <div class="row margin-top-3">
+            <div class="col-sm-4">
+                <h4>Contrary to popular belief, Lorem Ipsum is not simply?</h4>
+                <p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-      </div><!-- column -->
-      </div><!-- row -->
-      <!-- END ROW 1 -->      
-          
-      <!-- ROW 2 -->
-      <div class="row margin-top-3">
-          
-      <div class="col-sm-4">
-
-          <h4>Item 1</h4>
-          <p>Some text</p>
-
-      </div><!-- column -->
-          
-      <div class="col-sm-4">
-
-          <h4>Item 2</h4>
-          <p>Some text</p>
-
-      </div><!--column-->
-          
-      <div class="col-sm-4">
-
-          <h4>Item 3</h4>
-          <p>Some text</p>
-
-      </div><!-- column-->
-          
-      </div><!-- row -->
-      <!-- END ROW 2 -->             
-
-            
+            </div>
+            <div class="col-sm-4">
+                <h4>Pellentesque adipiscing commodo elit at?</h4>
+                <p>dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</p>
+            </div>
+            <div class="col-sm-4">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Gjf7D0Qj8C8" allowfullscreen></iframe>
+              </div>
+          </div>
+      </div>                      
 </section>      
-<!-- .................................................... -->
 
+<form action="/action_page.php">
+  <div class="container">
+    <h2>Subscribe to our Newsletter</h2>
+    <p>Lorem ipsum text about why you should subscribe to our newsletter blabla. Lorem ipsum text about why you should subscribe to our newsletter blabla.</p>
+  </div>
+
+  <div class="container" style="background-color:white">
+    <input type="text" placeholder="Name" name="name" required>
+    <input type="text" placeholder="Email address" name="mail" required>
+    <label>
+      <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+    </label>
+  </div>
+
+  <div class="container">
+    <input type="submit" value="Subscribe">
+  </div>
+</form>
 </div> <!-- END container-->    
 </main>
 
