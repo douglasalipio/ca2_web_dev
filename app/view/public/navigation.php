@@ -5,7 +5,7 @@
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
 
       <a class="navbar-brand" href="index.php">
-        <img src="img/capoeira_stencil.jpg" alt="robot logo" style="width:60px;">
+        <img src="img/capoeira3.jpg" alt="robot logo" style="width:60px;">
       </a>
         
       <!-- Toggler/collapsibe Button -->
