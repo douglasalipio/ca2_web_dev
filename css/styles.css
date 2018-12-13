@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+
+
+/* 
+--------------------------------------------------
+ CSS to see the bootstrap grids
+-------------------------------------------------- */
+/*
+div[class="row"] {
+    border: 1px dotted rgba(0, 0, 0, 0.5);
+}
+
+div[class^="col"] {
+    background-color: rgba(255, 0, 0, 0.2);
+    border: 1px dotted rgba(0, 0, 0, 0.5);
+}
+*/
+
+/* 
+--------------------------------------------------
+ Bootstrap dropdown menu out of alignment fix
+-------------------------------------------------- */
+.dropdown {
+  margin-top: 0px;
+}
+
+/* 
+--------------------------------------------------
+ Images
+-------------------------------------------------- */
+
+a img
+{
+  border:0;
+} 
+
+img 
+{ 
+  max-width: 100%;
+}
+
+.responsive-image { max-width:100%; height:auto; }
