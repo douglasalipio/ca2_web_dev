@@ -4,12 +4,11 @@
 
 // PRIVATE PAGE
 
-//needs to be at the start of every page where you will use $_SESSION
+// needs to be at the start of every page where you will use $_SESSION
 session_start();
 
-if (!isset($_SESSION["loggedIn"]) && !$_SESSION["loggedIn"] == 1)
-{
-    //throw you off the page if not logged in
+if (! isset($_SESSION["loggedIn"]) && ! $_SESSION["loggedIn"] == 1) {
+    // throw you off the page if not logged in
     // just in case someone trys the page with a direct URL
     header("Location:index.php");
 }
@@ -23,7 +22,7 @@ include (APPLICATION_PATH . "/inc/config.inc.php");
 ?>
 
 <html lang="en">
-    
+
 <head>
     
 <?php include (VIEW_PATH . "/head.php"); ?>
@@ -31,66 +30,44 @@ include (APPLICATION_PATH . "/inc/config.inc.php");
 </head>
 
 <body>
+
+	<!-- HEADER ------------------------------------------------>
         
-<!-- HEADER ------------------------------------------------>
-        
-<?php 
-    echo "<header>";
-    include (VIEW_PATH . "/private/navigation.php"); 
-    echo "</header>";
-    
-    include (APPLICATION_PATH . "/inc/db.inc.php");
+<?php
+echo "<header>";
+include (VIEW_PATH . "/private/navigation.php");
+echo "</header>";
+
+include (APPLICATION_PATH . "/inc/db.inc.php");
 ?>
-        
-<!-- MAIN CONTENT ------------------------------------------>
-<main class="margin-top-6">    
-<div class="container">
-    
-<!-- .................................................... -->      
-<section id="feature">
-<p class="pagedebug">
-    <!-- javascript working -->
-    <script type="text/javascript"> document.write(getCurrentPage());</script>
-</p>     
-      <h2>AJAX Example</h2>
 
-      <!-- ROW 1 -->
-      <div class="row">
-      <div class="col-sm-12">
-  
-        <!-- AJAX EXAMPLE -->
+	<main class="margin-top-6">
+	<div class="container">
+		<section id="feature">
+			<div class="row">
+				<div class="col-sm-12">
 
-        <div id="AJAXResponseMessage"><h4>Let AJAX change this text</h3></div>
-        <br>
-        <div id="AJAXResponseErrorMessage"></div>
-        <br>
-        <div id="AJAXResponseErrorVariables"></div>
-        <br>
-        <button type="button" onclick="loadXMLDoc()">Make AJAX Call</button>
+					<p>This site is part of a basic introduction to web applications.
+						The technologies of HTML, CSS, JavaScript, SQLite and PHP.</p>
 
-        <!-- AJAX EXAMPLE END -->
+					<p>The code shown here is not intended for production deployment
+						it. It's intent is to explain the principles of the technologies.
+						The examples evolve towards production deployable caode as the
+						cource evolves and takes into account best practices, team
+						development, continious build, loosly coupled components for
+						maintainability and security issues.</p>
 
-      </div><!-- column -->
-      </div><!-- row -->
-      <!-- END ROW 1 -->      
-                      
-            
-</section>
-<!-- .................................................... -->
+				</div>
+			</div>
+		</section>
+	</div>
+	</main>
+	<footer>
+        <?php include (VIEW_PATH . "/private/footer.php"); ?>
+    	<?php include (VIEW_PATH . "/foot.php"); ?>
+	</footer>
 
-</div> <!-- END container-->    
-</main>
-
-<!-- FOOTER ------------------------------------------------>
-<footer>
-    <?php include (VIEW_PATH . "/private/footer.php"); ?>
-</footer>
-        
-<!-- all content above this line -->    
-<?php include (VIEW_PATH . "/foot.php"); ?>
-        
 </body>
 </html>
 
 
-    
