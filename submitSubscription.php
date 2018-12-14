@@ -27,10 +27,10 @@
     
     if(!$return) {
           echo $db->lastErrorMsg();
-          //header("Location: privatepage3.php?deleteStatus=dbfail");
+          header("Location: privatepage3.php?deleteStatus=dbfail");
     } 
     else {
-          //header("Location: privatepage3.php?deleteStatus=ok");
+          header("Location: privatepage3.php?deleteStatus=ok");
     }
         
     $db->close(); 
