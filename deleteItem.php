@@ -27,7 +27,7 @@ include (APPLICATION_PATH . "/inc/db.inc.php");
 
 if ( empty($_REQUEST['iid']) )
 {
-    header("Location: privatepage3.php?deleteStatus=empty");
+    header("Location: privatePage3.php?deleteStatus=empty");
     exit;
 }
 else
@@ -38,14 +38,14 @@ else
 if(!$db) 
 {
   echo $db->lastErrorMsg();
-  header("Location: privatepage3.php?deleteStatus=dbfail");
+  header("Location: privatePage3.php?deleteStatus=dbfail");
   exit;
 } 
  else 
 { 
     //Check if exists
      
-    $query = "select Robot_ID from Robots WHERE Robot_ID='$iid'";
+    $query = "select user_ID from User WHERE User_ID='$iid'";
      
     $results = $db->query($query); 
      
@@ -53,32 +53,32 @@ if(!$db)
     {
         // no record
         
-        header("Location: privatepage3.php?deleteStatus=invalid");
+        header("Location: privatePage3.php?deleteStatus=invalid");
         exit;   
     }
     elseif( $results->numColumns() != 1 ) 
     {
         //more than one record exists - data issue, should only be one
         
-        header("Location: privatepage3.php?deleteStatus=dataIssue");
+        header("Location: privatePage3.php?deleteStatus=dataIssue");
         exit;   
     }
     else
     {
        //sure we have one record to delete
         
-       $stm = "DELETE FROM Robots WHERE Robot_ID='$iid'";
+       $stm = "DELETE FROM User WHERE User_ID='$iid'";
 
        $return = $db->exec($stm);
         
        if(!$return) 
        {
           echo $db->lastErrorMsg();
-          header("Location: privatepage3.php?deleteStatus=dbfail");
+          header("Location: privatePage3.php?deleteStatus=dbfail");
        } 
        else 
        {
-          header("Location: privatepage3.php?deleteStatus=ok");
+          header("Location: privatePage3.php?deleteStatus=ok");
        }
         
        $db->close(); 

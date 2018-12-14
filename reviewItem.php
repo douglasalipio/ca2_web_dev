@@ -28,27 +28,23 @@ include (APPLICATION_PATH . "/inc/db.inc.php");
 
 // input checking
 
-if ( empty($_REQUEST['iid']) )
-{
-    echo '<p class="text-warning"> No ID was provided </p>'	;
-    exit;
-}
-else
-{
+    if ( empty($_REQUEST['iid']) ){
+        echo '<p class="text-warning"> No ID was provided </p>'	;
+        exit;
+    
+    }else{
+    
     $iid = $db->escapeString(htmlspecialchars($_REQUEST['iid']));
     
-    //echo '<p>iid :'.$iid.'</p>';
-}
+    }
 
-if(!$db) 
-{
-  echo '<p class="text-warning">'.$db->lastErrorMsg().'</p>';
-  exit;
-} 
- else 
-{ 
+    if(!$db) {
+        echo '<p class="text-warning">'.$db->lastErrorMsg().'</p>';
+        exit;
+    
+    } else { 
+
     //Check if exists
-     
     $query = "select * from User WHERE user_ID ='".$iid."'";
 
     $results = $db->query($query);
@@ -93,31 +89,22 @@ if(!$db)
                 .$row["user_ID"].'">'
                 .'</div></div>'
             .'<div class="form-group row">
-                <label for="robotName" class="col-sm-4 col-form-label">Robot Name</label>
+                <label for="robotName" class="col-sm-4 col-form-label">User Name</label>
                 <div class="col-sm-8">
                 <input id="robotName" readonly class="form-control" type="text" value="'
                 .$row["user_name"].'">'
                 .'</div></div>'
             .'<div class="form-group row">
-                <label for="robotDesc" class="col-sm-4 col-form-label">Description</label>
+                <label for="robotDesc" class="col-sm-4 col-form-label">Password</label>
                 <div class="col-sm-8">
                 <textarea id="robotDesc" readonly class="form-control" type="text" rows="3" >'
                 .$row["user_password"].'</textarea>'
                 .'</div></div>'
             .'<div class="form-group row">
-                <label for="robotCost" class="col-sm-4 col-form-label">Robot Cost</label>
+                <label for="robotCost" class="col-sm-4 col-form-label">Email</label>
                 <div class="col-sm-8">
                 <input id="robotCost" readonly class="form-control" type="text" value="'
                 .$row["user_email"].'">'
-                .'</div></div>'
-           .'<div class="form-group row">
-                <label for="robotImage" class="col-sm-4 col-form-label"> Image</label>
-                <div class="col-sm-8">'
-                .'<img src="img/'.$row["RobotImage"].'" class="img-rounded img-responsive" alt="'.$row["RobotName"].'">'
-                
-                //<input id="robotImage" readonly class="form-control" type="text" value="'
-                //.$row["RobotImage"].'">'
-                
                 .'</div></div>'
             ;
         }

@@ -34,7 +34,7 @@ if(!$db)
                 <tr>
                     <th scope="col">ID</th>
                     <th scope="col">Name</th>
-                    <th scope="col"> actions </th>
+                    <th scope="col" class="text-center"> actions </th>
                 </tr>
                 </thead>
                 <tbody>';
@@ -59,10 +59,8 @@ if(!$db)
                   .'><button type="button" class="btn btn-info">more</button></a>&nbsp;'
                   ."</td></tr>";
            }
-           
            echo "</tbody></table>";
            echo "</div>";
-
        }
    }
           

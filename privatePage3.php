@@ -19,14 +19,10 @@ include (APPLICATION_PATH . "/inc/config.inc.php");
 <html lang="en">
     
     <head>
-        
         <?php include (VIEW_PATH . "/head.php"); ?>
-        
     </head>
+
     <body>
-        
-        <!-- HEADER ------------------------------------------------>
-        
         <?php
         echo "<header>";
             include (VIEW_PATH . "/private/navigation.php");
@@ -34,15 +30,11 @@ include (APPLICATION_PATH . "/inc/config.inc.php");
         
         include (APPLICATION_PATH . "/inc/db.inc.php");
         ?>
-        
-        <!-- MAIN CONTENT ------------------------------------------>
         <main class="margin-top-6">
             <div class="container-fluid">
                 
-                <!-- .................................................... -->
                 <section id="review">
                     
-                    <!-- ROW 0 -->
                     <div class="row">
                         <div class="col-sm-12">
                             
@@ -72,44 +64,28 @@ include (APPLICATION_PATH . "/inc/config.inc.php");
                             }
                             ?>
                             
-                            </div><!-- column -->
-                            </div><!-- row -->
-                            <!-- END ROW 1 -->
-                            <!-- ROW 1 -->
-                            <div class="row">
-                                <div class="col-sm-5">
-                                    <h3>User Models</h3>
-                                    
-                                    <?php include ("browseItem.php"); ?>
-                                    </div><!-- column -->
-                                    <div class="col-sm-7">
-                                        
-                                        <!-- AJAX -->
-                                        
-                                        <div id="ReviewForm">
-                                        </div>
-                                        
-                                        <div id="ReviewPanel_AJAXResponseErrorMessage"></div>
-                                        <div id="ReviewPanel_AJAXResponseErrorVariables"></div>
-                                        
-                                        <!-- END AJAX -->
-                                        
-                                        </div><!-- column -->
-                                        </div><!-- row -->
-                                        <!-- END ROW 1 -->
-                                        
-                                        
-                                    </section>
-                                    <!-- .................................................... -->
-                                    </div> <!-- END container-->
-                                </main>
-                                <!-- FOOTER ------------------------------------------------>
-                                <footer>
-                                    <?php include (VIEW_PATH . "/private/footer.php"); ?>
-                                </footer>
-                                
-                                <!-- all content above this line -->
-                                <?php include (VIEW_PATH . "/foot.php"); ?>
-                                
-                            </body>
-                        </html>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <h3>User Models</h3>
+                            
+                            <?php include ("browseItem.php"); ?>
+                        </div>
+                        <div class="col-sm-7">
+                            
+                            <!-- AJAX -->
+                            <div id="ReviewForm">
+                            </div>
+                            
+                            <div id="ReviewPanel_AJAXResponseErrorMessage"></div>
+                            <div id="ReviewPanel_AJAXResponseErrorVariables"></div>
+                            
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <?php include (VIEW_PATH . "/foot.php"); ?>
+    </body>
+</html>
