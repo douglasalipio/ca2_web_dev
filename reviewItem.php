@@ -49,7 +49,7 @@ if(!$db)
 { 
     //Check if exists
      
-    $query = "select * from Robots WHERE Robot_ID='".$iid."'";
+    $query = "select * from User WHERE user_ID ='".$iid."'";
 
     $results = $db->query($query);
 
@@ -90,25 +90,25 @@ if(!$db)
                 <label for="robotID" class="col-sm-4 col-form-label">ID</label>
                 <div class="col-sm-8">
                 <input id="robotID" readonly class="form-control" type="text" value="'
-                .$row["Robot_ID"].'">'
+                .$row["user_ID"].'">'
                 .'</div></div>'
             .'<div class="form-group row">
                 <label for="robotName" class="col-sm-4 col-form-label">Robot Name</label>
                 <div class="col-sm-8">
                 <input id="robotName" readonly class="form-control" type="text" value="'
-                .$row["RobotName"].'">'
+                .$row["user_name"].'">'
                 .'</div></div>'
             .'<div class="form-group row">
                 <label for="robotDesc" class="col-sm-4 col-form-label">Description</label>
                 <div class="col-sm-8">
                 <textarea id="robotDesc" readonly class="form-control" type="text" rows="3" >'
-                .$row["RobotDescription"].'</textarea>'
+                .$row["user_password"].'</textarea>'
                 .'</div></div>'
             .'<div class="form-group row">
                 <label for="robotCost" class="col-sm-4 col-form-label">Robot Cost</label>
                 <div class="col-sm-8">
                 <input id="robotCost" readonly class="form-control" type="text" value="'
-                .$row["RobotCost"].'">'
+                .$row["user_email"].'">'
                 .'</div></div>'
            .'<div class="form-group row">
                 <label for="robotImage" class="col-sm-4 col-form-label"> Image</label>

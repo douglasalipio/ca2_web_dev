@@ -18,17 +18,13 @@ include (APPLICATION_PATH . "/inc/config.inc.php");
 <html lang="en">
 	
 	<head>
-		
 		<?php include (VIEW_PATH . "/head.php"); ?>
-		
 	</head>
+	
 	<body>
-		
-		<!-- HEADER ------------------------------------------------>
-		
 		<?php
 		echo "<header>";
-												include (VIEW_PATH . "/private/navigation.php");
+						include (VIEW_PATH . "/private/navigation.php");
 		echo "</header>";
 		
 		include (APPLICATION_PATH . "/inc/db.inc.php");
