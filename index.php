@@ -14,7 +14,7 @@
     
 <?php include (VIEW_PATH . "/head.php"); ?>
     
-<!-- needed for the header image -->
+<!-- needed for the header image --> 
 <style> 
 html,
 body,
@@ -114,15 +114,15 @@ header {
       </div>                      
 </section>      
 
-<form action="/action_page.php">
+<form action="submitSubscription.php?" method="post">
   <div class="container">
     <h2>Subscribe to our Newsletter</h2>
     <p>Lorem ipsum text about why you should subscribe to our newsletter blabla. Lorem ipsum text about why you should subscribe to our newsletter blabla.</p>
   </div>
 
   <div class="container" style="background-color:white">
-    <input type="text" placeholder="Name" name="name" required>
-    <input type="text" placeholder="Email address" name="mail" required>
+    <input id="name" type="text" placeholder="Name" name="name" required>
+    <input id="email" type="text" placeholder="Email address" name="mail" required>
     <label>
       <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
     </label>

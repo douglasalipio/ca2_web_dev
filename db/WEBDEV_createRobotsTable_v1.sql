@@ -6,3 +6,9 @@ CREATE TABLE Robots
 	RobotCost			decimal			not	null,
 	RobotImage		    varchar(250)	null
 );
+
+CREATE TABLE Subscription
+(
+	Subscription_Email		varchar(100)	not null PRIMARY KEY,
+	Subscription_Name		varchar(100)	not null
+);
