@@ -108,13 +108,13 @@ header {
             </div>
             <div class="col-sm-4">
               <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Gjf7D0Qj8C8" allowfullscreen></iframe>
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pzAJKaDoew8" allowfullscreen></iframe>
               </div>
           </div>
       </div>                      
 </section>      
 
-<form action="submitSubscription.php?" method="post">
+<form action="submitSubscription.php?" method="POST">
   <div class="container">
     <h2>Subscribe to our Newsletter</h2>
     <p>Lorem ipsum text about why you should subscribe to our newsletter blabla. Lorem ipsum text about why you should subscribe to our newsletter blabla.</p>

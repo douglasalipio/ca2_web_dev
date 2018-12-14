@@ -1,10 +1,10 @@
 <!-- PRIVATE MENU -->
 
     <!-- MENU -->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-danger fixed-top">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
 
       <a class="navbar-brand" href="home.php">
-        <img src="img/robot.svg" alt="robot logo" style="width:60px;">
+        <img src="img/capoeira3.jpg" alt="robot logo" style="width:60px;">
       </a>
         
       <!-- Toggler/collapsibe Button -->
@@ -17,16 +17,16 @@
           
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link <?php echo "$menuActive_home"; ?>" href="home.php">Home</a>
+          <a class="nav-link <?php echo "$menuActive_home"; ?>" href="home.php">Article</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link <?php echo "$menuActive_privatepage1"; ?>" href="privatePage1.php">Ajax Raw</a>
+          <a class="nav-link <?php echo "$menuActive_privatepage2"; ?>" href="privatePage2.php">Detail</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link <?php echo "$menuActive_privatepage2"; ?>" href="privatePage2.php">Ajax jQuery</a>
+          <a class="nav-link <?php echo "$menuActive_privatepage2"; ?>" href="privatePage2.php">Report</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link <?php echo "$menuActive_privatepage3"; ?>" href="privatePage3.php">Ajax Database</a>
+          <a class="nav-link <?php echo "$menuActive_privatepage3"; ?>" href="privatePage3.php">Database</a>
         </li>
       </ul> 
         

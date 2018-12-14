@@ -45,52 +45,79 @@ include (APPLICATION_PATH . "/inc/config.inc.php");
         
 <!-- MAIN CONTENT ------------------------------------------>
 <main class="margin-top-6">    
-<div class="container">
-    
+<div class="container">    
 <!-- .................................................... -->      
 <section id="feature">
 
-      <!-- ROW 1 -->
       <div class="row">
       <div class="col-sm-12">
 
-        <h3>A simple AJAX driven jQuery website</h3>
+        <h3>Check out those videos!</h3>
         <br>
-		    
-        <ul id="ajaxNavPages">
-            <li><a href="#page1">Page 1</a></li>
-            <li><a href="#page2">Page 2</a></li>
-            <li><a href="#page3">Page 3</a></li>
-            <li><a href="#page4">Page 4</a></li>
-            <li><img id="loading" src="img/ajax_load.gif" alt="loading" /></li>
-        </ul>
 
-      </div><!-- column -->
-      </div><!-- row -->
-      <!-- END ROW 1 -->   
-    
+      </div>
+      </div>
+      
       <div class="row">
       <div class="col-sm-12">
           
          <div class="clear"></div>
           
-        <div id="pageContent">
-        Hello, this is a demo for a <a href="http://tutorialzine.com/2009/09/simple-ajax-website-jquery/" target="_blank">Tutorialzine tutorial</a>. To test it, click some of the buttons above.
+        <div>
+        Orci porta non pulvinar neque laoreet suspendisse. Fames ac turpis egestas maecenas pharetra convallis posuere morbi leo. Venenatis tellus in metus vulputate eu scelerisque felis imperdiet. 
+        <br>
+        <br>          
         </div>
-          
-           <div class="clear"></div>
 
-      </div><!-- column -->
-      </div><!-- row -->
-      <!-- END ROW 2 -->      
-                      
-            
+    </div>
+    </div>
+                  
+    <div class="container-fluid pb-video-container">
+    <div class="col-md-10 offset-md-1">
+        <h3 class="text-xs-center">Sample Video Gallery</h3>
+        <div class="row pb-row">
+            <div class="col-md-3 pb-video">
+                <iframe class="pb-video-frame" width="100%" height="230" src="https://www.youtube.com/embed/pzAJKaDoew8" frameborder="0" allowfullscreen></iframe>
+                <label class="form-control label-warning text-xs-center">Claydee - Alena</label>
+            </div>
+            <div class="col-md-3 pb-video">
+                <iframe class="pb-video-frame" width="100%" height="230" src="https://www.youtube.com/embed/6H0D8VaIli0" frameborder="0" allowfullscreen></iframe>
+                <label class="form-control label-warning text-xs-center">Best Capoeira Brazil</label>
+            </div>
+            <div class="col-md-3 pb-video">
+                <iframe class="pb-video-frame " width="100%" height="230" src="https://www.youtube.com/embed/Bq-6gXrZ84s" frameborder="0" allowfullscreen></iframe>
+                <label class="form-control label-warning text-xs-center">#ABC2015 CM Barrãozinho Axé Capoeira</label>
+            </div>
+            <div class="col-md-3 pb-video">
+                <iframe class="pb-video-frame" width="100%" height="230" src="https://www.youtube.com/embed/aTh9OScnSLc" frameborder="0" allowfullscreen></iframe>
+                <label class="form-control label-warning text-xs-center">Filme: Capoeira, o valor de uma amizade.</label>
+            </div>
+        </div>
+        <div class="row pb-row">
+            <div class="col-md-3 pb-video">
+                <iframe class="pb-video-frame" width="100%" height="230" src="https://www.youtube.com/embed/RthNTSgjql8" frameborder="0" allowfullscreen></iframe>
+                <label class="form-control label-warning text-xs-center">Concurso Rei da Capoeira de Coburg 2011</label>
+            </div>
+            <div class="col-md-3 pb-video">
+                <iframe class="pb-video-frame" width="100%" height="230" src="https://www.youtube.com/embed/068SGqHn2aw" frameborder="0" allowfullscreen></iframe>
+                <label class="form-control label-warning text-xs-center">Roda de Capoeira na Praia - Boa Vontade</label>
+            </div>
+            <div class="col-md-3 pb-video">
+                <iframe class="pb-video-frame" width="100%" height="230" src="https://www.youtube.com/embed/HfuD3Js_suI" frameborder="0" allowfullscreen></iframe>
+                <label class="form-control label-warning text-xs-center">Beautiful Girls in Capoeira!</label>
+            </div>
+            <div class="col-md-3 pb-video">
+                <iframe class="pb-video-frame" width="100%" height="230" src="https://www.youtube.com/embed/xgrEIu8BERM" frameborder="0" allowfullscreen></iframe>
+                <label class="form-control label-warning text-xs-center">Best CAPOEIRA flow</label>
+            </div>
+        </div>
+    </div>
+</div>
+
 </section>
 <!-- .................................................... -->
-
 </div> <!-- END container-->    
 </main>
-
 <!-- FOOTER ------------------------------------------------>
 <footer>
     <?php include (VIEW_PATH . "/private/footer.php"); ?>

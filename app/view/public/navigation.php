@@ -18,13 +18,7 @@
           
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link <?php echo "$menuActive_index"; ?>" href="index.php">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link <?php echo "$menuActive_about"; ?>" href="about.php">Database</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link <?php echo "$menuActive_about"; ?>" href="about.php">Report</a>
+          <a class="nav-link <?php echo "$menuActive_index"; ?>" href="index.php">Article</a>
         </li>
       </ul> 
       
