@@ -15,13 +15,13 @@
           <a class="nav-link <?php echo "$menuActive_home"; ?>" href="home.php">Article</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link <?php echo "$menuActive_privatepage2"; ?>" href="privatePage2.php">Detail</a>
+          <a class="nav-link <?php echo "$menuActive_privatepage2"; ?>" href="detailPage.php">Detail</a>
         </li>
         <li class="nav-item">
           <a class="nav-link <?php echo "$menuActive_reportPage.php"; ?>" href="reportPage.php">Report</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link <?php echo "$menuActive_privatepage3"; ?>" href="privatepage3.php">Database</a>
+          <a class="nav-link <?php echo "$menuActive_privatepage3"; ?>" href="databasePage.php">Database</a>
         </li>
       </ul> 
         
