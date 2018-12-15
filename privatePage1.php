@@ -123,6 +123,9 @@ include (APPLICATION_PATH . "/inc/db.inc.php");
 						in the whole project. I'd like to use a proper IDE (PHP Storm) and
 						make the website more professional</p>
 
+					<a href="https://github.com/douglasalipio/ca2_web_dev">project on
+						Github </a>
+
 				</div>
 			</div>
 		</section>
