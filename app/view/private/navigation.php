@@ -18,7 +18,7 @@
           <a class="nav-link <?php echo "$menuActive_privatepage2"; ?>" href="privatePage2.php">Detail</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link <?php echo "$menuActive_privatepage1"; ?>" href="privatePage1.php">Report</a>
+          <a class="nav-link <?php echo "$menuActive_reportPage.php"; ?>" href="reportPage.php">Report</a>
         </li>
         <li class="nav-item">
           <a class="nav-link <?php echo "$menuActive_privatepage3"; ?>" href="privatepage3.php">Database</a>
