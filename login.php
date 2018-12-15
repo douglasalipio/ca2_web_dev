@@ -50,9 +50,6 @@
         <br><br>
         <button class="btn btn-lg btn-warning btn-block btn-signin" type="submit">Sign in</button><br><br>
     </form>
-    <a href="showUserTable.php" class="forgot-password">
-        debug: view user table 
-    </a>
 </div><!-- /card-container -->
 </div> <!-- END container-->    
 </main>
